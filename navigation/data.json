@@ -1,0 +1,64 @@
+{
+  "hello": "world",
+  "navItems": [
+    {
+      "title": "常用工具",
+      "items": [
+        {
+          "name": "Can I use",
+          "url": "https://caniuse.com/",
+          "description": "前端 API 兼容性查询"
+        },
+        {
+          "name": "TinyPNG",
+          "url": "https://tinypng.com/",
+          "description": "在线图片压缩工具"
+        },{
+          "name": "Can",
+          "url": "https://caniuse.com/",
+          "description": "前端 API 兼容性查询"
+        },
+        {
+          "name": "TinyPNGaa",
+          "url": "https://tinypng.com/",
+          "description": "在线图片压缩工具"
+        },
+        {
+          "name": "Notion AI",
+          "url": "https://www.notion.so/",
+          "description": "笔记 AI"
+        }
+      ]
+    },
+    {
+      "title": "AI 导航",
+      "items": [
+        {
+          "name": "ChatGPT",
+          "url": "https://openai.com/chatgpt",
+          "description": "最强 AI 聊天机器人"
+        },
+        {
+          "name": "Notion AI",
+          "url": "https://www.notion.so/",
+          "description": "笔记 AI"
+        }
+      ]
+    },
+    {
+      "title": "茂茂的站点导航",
+      "items": [
+        {
+          "name": "React",
+          "url": "https://reactjs.org/",
+          "description": "用于构建用户界面的 JavaScript 库"
+        },
+        {
+          "name": "React Router",
+          "url": "https://reactrouter.com/",
+          "description": "React 的声明式路由"
+        }
+      ]
+    }
+  ]
+}
