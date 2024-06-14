@@ -6,7 +6,8 @@
   "scripts": {
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
-    "docs:preview": "vitepress preview"
+    "docs:preview": "vitepress preview",
+    "docs:deploy": "vitepress build && cd .vitepress/dist && powershell -Command \"Remove-Item -Recurse -Force .git\" && git init && git checkout -b main && git add -A && git commit -m 'deploy' && git push -f https://github.com/ly2351/blog.git main:gh-pages && cd -"
   },
   "dependencies": {
     "vite-plugin-vitepress-auto-sidebar": "^1.6.5"
