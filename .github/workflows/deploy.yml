@@ -20,9 +20,6 @@ jobs:
         run: pnpm docs:build
 
       - name: Deploy
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .vitepress/dist
         run: |
           cd .vitepress/dist
           git init
