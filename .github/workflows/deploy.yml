@@ -24,3 +24,9 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: .vitepress/dist
+        run: |
+          cd .vitepress/dist
+          git init
+          git add -A
+          git commit -m 'deploy'
+          git push -f git@github.com:<USERNAME>/<REPO>.git main:gh-pages
