@@ -13,6 +13,7 @@ export default defineConfig({
   description: "个人知识库",
   srcDir: '.',
   metaChunk:true,
+  base: '/blog/', // 如果想用 https://xxx.github.io/blog/ 访问，那么这句话必填
   themeConfig: {
     logo: '/favicon.png',
     lastUpdatedText: '更新时间',
