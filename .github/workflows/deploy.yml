@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: 20
+          node-version: '20'
       - run: npm i pnpm -g
       - run: pnpm install --frozen-lockfile
 
@@ -20,6 +20,8 @@ jobs:
         run: pnpm docs:build
 
       - name: Deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           cd .vitepress/dist
           git init
